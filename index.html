@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <style>
+        #title{
+           font-style: italic;
+        }
+		
+		body {
+		   margin-top: 50px;
+		}
+    </style>
+
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">Thank you for filling this survey form!</p>
+    <form id="survey-form">
+        <div>
+            <label for="name" id="name-label"> Name </label>
+            <input type="text" id="name" name="Name" placeholder="John Johnson" required>
+        </div>
+        <br>
+        <div>
+            <label for="email" id="email-label"> Email </label>
+            <input type="email" id="email" name="Email" placeholder="Enter an email" required>
+        </div>
+        <br>
+        <div>
+            <label for="number" id="number-label"> Age</label>
+            <input type="number" id="number" name="Age" placeholder="40" min="18" max="100" required>
+        </div>
+        </br>
+        <label for="dropdown" id="option"> Select option:</label>
+        <select id="dropdown">
+            <option value="male"> Male </option>
+            <option value="female"> Female</option>
+            <option value="non-binary"> Non-binary</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="where-do-you-live" id="where-do-you-live"> <strong> Where do you live?</strong> </label>
+        <input id="where-do-you-live" type="radio" id="city" name="location" value="city">
+        <label for="where-do-you-live"> city </label>
+        <input id="where-do-you-live" type="radio" id="countryside" name="location" value="countryside">
+        <label for="where-do-you-live"> countryside </label>
+        <br>
+        <br>
+
+        <label for="what-is-your-favourite-country" id="what-is-your-favourite-country"> <strong> Where would you rather
+                live?</strong> </label>
+        <input id="what-is-your-favourite-country" type="checkbox" id="England" name="country" value="country">
+        <label for="what-is-your-favourite-country"> England </label>
+        <input id="what-is-your-favourite-country" type="checkbox" id="Spain" name="country" value="country">
+        <label for="what-is-your-favourite-country"> Spain </label>
+        <br>
+        <br>
+        <textarea id="what-is-your-favourite-country" name="what-is-your-favourite-country" rows="4" cols="50" placeholder="Please write here any other country you would rather live in!">
+                    </textarea>
+        <br>
+        <br>
+        <button id="submit"> Submit</button>
+    </form>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
